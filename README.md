@@ -21,11 +21,22 @@ An Arduino-based health monitoring system that measures body temperature using a
 - 16×2 LCD + potentiometer (for contrast)  
 - Piezo buzzer  
 - Red LED + 220Ω resistor  
-- Breadboard + jumper wires  
+- Breadboard + jumper wires
 
 ---
+## 🔎 Data Visualization with Python
 
-## ▶️ Usage
+This project also includes a **Python script** that reads the Arduino/Tinkercad output (CSV) and generates real-time or offline graphs.
+
+- **dashboard.py** → Reads CSV or Serial output and plots graphs using matplotlib.
+- **health_data.csv** → Sample dataset collected from Arduino/Tinkercad.
+- **health_plot.png** → Example output graph.
+
+### Usage
+Run the script in file mode:
+```bash
+python dashboard.py --file code/health_data.csv --save docs/health_plot.png
+
 Run and test the project directly in Tinkercad:  
 [🔗 Arduino Health Monitor Simulation](https://www.tinkercad.com/things/67KJe31Xc2Y-health-monitor-device?sharecode=U8fZo2YqBiZMBVjh-tUB_O1cb_Xs4QOgrW5cOOaIch0)
 
